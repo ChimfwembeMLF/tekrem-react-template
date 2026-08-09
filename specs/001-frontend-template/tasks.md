@@ -16,7 +16,7 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize React/Vite/TypeScript project in repository root (updating `package.json` and `vite.config.ts`)
+- [x] T001 Initialize React/Vite/TypeScript project in repository root (updating `package.json` and `vite.config.ts`)
 - [ ] T002 [P] Install Tailwind CSS and dependencies, configure in `tailwind.config.js` and `postcss.config.js`
 - [ ] T003 [P] Initialize shadcn/ui and configure in `components.json`
 
@@ -28,10 +28,10 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Enforce strict TypeScript settings in `tsconfig.json` and `tsconfig.app.json`
-- [ ] T005 Create standard project directories (`src/assets`, `src/components`, `src/features`, `src/lib`, `src/routes`, `src/pages`, `src/services`, `src/stores`, `src/types`, `src/schemas`, `src/hooks`, `src/layouts`)
+- [x] T004 Enforce strict TypeScript settings in `tsconfig.json` and `tsconfig.app.json`
+- [x] T005 Create standard project directories (`src/assets`, `src/components`, `src/features`, `src/lib`, `src/routes`, `src/pages`, `src/services`, `src/stores`, `src/types`, `src/schemas`, `src/hooks`, `src/layouts`)
 - [ ] T006 Setup global CSS variables for Tailwind/shadcn in `src/index.css`
-- [ ] T007 Implement centralized API architecture with standard client in `src/lib/api/client.ts`
+- [x] T007 Implement centralized API architecture with standard client in `src/lib/api/client.ts`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 

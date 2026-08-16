@@ -1,6 +1,8 @@
 export class APIError extends Error {
-  constructor(public status: number, message: string) {
+  status: number;
+  constructor(status: number, message: string) {
     super(message);
+    this.status = status;
     this.name = 'APIError';
   }
 }
@@ -22,7 +24,7 @@ export const apiClient = {
     return response.json();
   },
 
-  async post<T>(url: string, body: any, init?: RequestInit): Promise<T> {
+  async post<T>(url: string, body: unknown, init?: RequestInit): Promise<T> {
     const response = await fetch(url, {
       ...init,
       method: 'POST',

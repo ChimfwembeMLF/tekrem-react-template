@@ -8,6 +8,15 @@
 
 Initialize a standard React/Vite/TypeScript frontend template with strict architectural boundaries, leveraging feature-based organization, TanStack Query for server state, Zustand for client state, and shadcn/ui for components.
 
+**Enterprise Additions**:
+
+- Global Error Boundary (React Router / React Error Boundary)
+- Toast Notifications (sonner)
+- CI/CD Pipeline (GitHub Actions)
+- Environment Variable Validation (Zod)
+- Theme Toggle (next-themes)
+- Example Unit Tests (Vitest / RTL)
+
 ## Technical Context
 
 **Language/Version**: TypeScript 5.x / Node.js 22 LTS+
@@ -30,7 +39,7 @@ Initialize a standard React/Vite/TypeScript frontend template with strict archit
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
 - **Feature-Based Architecture**: PASS. The project structure enforces `src/features/*`.
 - **Separation of Concerns**: PASS. The template includes patterns for separating UI components from API hooks and services.
@@ -89,3 +98,22 @@ tests/
 ```
 
 **Structure Decision**: A single project web application structure, heavily emphasizing `src/features/*` to comply with the feature-based architecture principle.
+
+### Enterprise Additions Structure
+
+```text
+.github/
+└── workflows/
+    └── ci.yml
+src/
+├── components/
+│   ├── common/
+│   │   ├── ErrorBoundary.tsx
+│   │   └── ThemeToggle.tsx
+│   └── ui/
+│       └── sonner.tsx
+├── lib/
+│   └── env.ts
+├── tests/
+│   └── example.test.tsx
+```

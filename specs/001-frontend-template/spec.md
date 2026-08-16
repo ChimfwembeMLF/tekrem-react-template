@@ -8,7 +8,7 @@
 
 **Input**: User description: "start the creation of this template"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Developer Setup (Priority: P1)
 
@@ -53,10 +53,10 @@ As a developer, I want to see a clear example of the feature-based architecture,
 
 ### Edge Cases
 
-- What happens when a developer tries to use `npm` or `yarn` instead of `pnpm`? (Should fail or warn)
+- What happens when a developer tries to use `npm` or `pnpm` instead of `pnpm`? (Should fail or warn)
 - How does the system handle missing environment variables during build?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -75,7 +75,7 @@ As a developer, I want to see a clear example of the feature-based architecture,
 - **Developer Workspace**: The local environment where code is written, checked, and tested.
 - **Feature Module**: A cohesive grouping of related components, hooks, schemas, services, and types within `src/features/`.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 
